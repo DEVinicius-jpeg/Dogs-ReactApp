@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 
-export default function Input({label, type, name}) {
+export default function Input({label, type, name, value, onChange, error, onBlur}) {
   return (
     <div className={styles.wrapper}>
         <label className={styles.label} htmlFor={name}>{label}</label>
@@ -9,9 +9,12 @@ export default function Input({label, type, name}) {
             id={name}
             name={name}
             type={type}
+            value={value}
+            onChange={onChange}
+            onBlur={onBlur}
             className={styles.input}
         />
-        <p className={styles.error}>Error</p>
+        {error && <p className={styles.error}>{error}</p>}
     </div>
   )
 }
