@@ -1,11 +1,11 @@
 import {React, useContext} from 'react';
 import { Link } from 'react-router-dom';
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+import Input from '../Input';
+import Button from '../Button';
 import useForm from '../../hooks/useForm';
 import {UserContext} from '../../context/UserContext';
 import Error from '../../helpers/Error';
-import styles from './LoginForm.module.css';
+import styles from './style.module.css';
 import stylesBtn from '../../components/Button/style.module.css';
 
 export default function LoginForm() {

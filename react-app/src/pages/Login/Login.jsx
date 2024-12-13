@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginCreate from './LoginCreate';
-import LoginForm from './LoginForm';
-import LoginPassLost from './LoginPassLost';
-import LoginPassReset from './LoginPassReset';
+import LoginCreate from '../../components/LoginCreate';
+import LoginForm from '../../components/LoginForm';
+import LoginPassLost from '../../components/LoginPassLost';
+import LoginPassReset from '../../components/LoginPassReset';
 import { UserContext } from '../../context/UserContext';
 import styles from './Login.module.css';
 

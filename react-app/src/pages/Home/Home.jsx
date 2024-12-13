@@ -1,8 +1,13 @@
-import React from 'react'
-import styles from './style.module.css'
+import React from 'react';
+import Feed from '../../components/Feed'
+import styles from './style.module.css';
 
-export default function Home() {
+function Home() {
   return (
-    <div>Home</div>
+    <section className='container mainContainer'>
+      <Feed/>
+    </section>
   )
 }
+
+export default Home;

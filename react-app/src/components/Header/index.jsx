@@ -6,16 +6,13 @@ import {UserContext} from '../../context/UserContext';
 
 
 export default function Header() {
-  const { data, userLogout } = useContext(UserContext)
+  const { data } = useContext(UserContext)
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
         <Link className={styles.logo} to='/' aria-label='Dogs - Home'> <Dogs/> </Link>
         {data ? (
           <Link className={styles.login} to="/conta">
-            {data.nome}
-            {console.log(data)}
-            <button onClick={userLogout}>Sair</button>
           </Link>
         ) : (
           <Link className={styles.login} to="/login">

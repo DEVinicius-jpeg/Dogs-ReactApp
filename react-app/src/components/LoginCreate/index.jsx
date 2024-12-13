@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
-import Input from '../../components/Input'
-import Button from '../../components/Button'
+import Input from '../Input'
+import Button from '../Button'
 import Error from '../../helpers/Error'
 import useForm from '../../hooks/useForm'
 import useFetch from '../../hooks/useFetch'
